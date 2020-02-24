@@ -1,0 +1,24 @@
+body {
+    font-size: large;
+}
+
+.box {
+    text-align: center;
+    width: 70;
+    background: #EEFFFF;
+    border: solid;
+    border-color: navy;
+    padding: 1em;
+    border-width: 1px;
+    font-family: "Courier New";
+    font-size: 80%
+}
+
+.indent {
+    margin-left: 1em
+}
+
+button {
+    width: 2.2em;
+    font-weight: bold
+}

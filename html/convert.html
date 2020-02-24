@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/convert.css" />
+    <title>Temperature Conversions</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" src="../js/convert.js" type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <h2>Temperature Conversions</h2>
+    <p>Input below the range of temperatures to convert:</p>
+    <form>
+
+        <select name="conversionUnit">
+            <option value="Celcius">Celcius to Farenheit</option>
+            <option value="Farenheit">Farenheit to Celcius</option>
+        </select>
+
+        <p>Upper bound:</p>
+        <input type="number" name="Upper" value="0"> </br>
+        <p>Lower bound:</p>
+        <input type="number" name="Lower" value="0"> </br>
+
+        <input type="button" value="submit" onclick="createTable(Upper.value , Lower.value,conversionUnit.value)">
+    </form>
+
+    <div id="converter">
+
+    </div>
+
+</body>
+
+</html>

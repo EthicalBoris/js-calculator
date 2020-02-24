@@ -1,0 +1,87 @@
+<hmtl>
+
+    <head>
+        <Title>My Calculator</title>
+        <!--link rel="stylesheet" type="text/css" href="../css/calc.css" /-->
+        <style>
+            body {
+                font-size: large;
+                background:rgb(222, 186, 231); /* Pink is the manliest shade of purple */
+                margin-left: 50%;
+                margin-right: 50%;   
+            }
+
+            .box {
+                text-align: right;
+                color:white;
+                width: 170;
+                background:rgb(44, 44, 44);
+                border: solid;
+                border-color: white;
+                border-width: 1px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 100%;   
+                margin-top: 200px;             
+            }
+            
+            .indent {
+                margin-left: 1em
+            }
+            
+            button {
+                width: 2.2em;
+                font-weight: bold;
+                border:none;
+                font-size:150%;
+            }
+
+            .operator {
+                background: rgb(44, 44, 44);
+                color: white;
+                border:solid;
+                border-width: 1px;
+            }
+
+        </style>
+        <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../js/calc.js"></script>
+    </head>
+
+    <body>
+        <p class="box">0</p>
+        <table>
+            <tr>
+                <td><button onclick="number(1)">1</button></td>
+                <td><button onclick="number(2)">2</button></td>
+                <td><button onclick="number(3)">3</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="number(4)">4</button></td>
+                <td><button onclick="number(5)">5</button></td>
+                <td><button onclick="number(6)">6</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="number(7)">7</button></td>
+                <td><button onclick="number(8)">8</button></td>
+                <td><button onclick="number(9)">9</button></td>
+            </tr>
+            <tr>
+                <td><button class="operator" onclick="dot()">.</button></td>
+                <td><button onclick="number(0)">0</button></td>
+                <td><button class="operator" onclick="C()">C</button></td>
+            </tr>
+            <tr>
+                <td><button class="operator" onclick="operation('+')">+</button></td>
+                <td><button class="operator" onclick="operation('-')">-</button></td>
+                <td><button class="operator" onclick="operation('*')">*</button></td>
+            </tr>
+        </table>
+        <table class="indent">
+            <tr>
+                <td><button class="operator" onclick="operation('/')">/</button></td>
+                <td><button class="operator" onclick="equals()">=</button></td>
+            </tr>
+        </table>
+    </body>
+
+    </html>
